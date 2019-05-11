@@ -27,3 +27,7 @@
     ),
     $img-url;
 }
+
+@mixin box-shadow($amount) {
+  box-shadow: 0 1.5rem 4rem rgba($color-black, $amount);
+}
