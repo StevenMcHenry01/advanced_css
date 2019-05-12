@@ -4,7 +4,7 @@
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: 0.15);
+  @include box-shadow-standard(0.15);
   transition: transform 0.2s;
   &__icon {
     font-size: 6rem;

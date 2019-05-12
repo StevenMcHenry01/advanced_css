@@ -28,6 +28,12 @@
     $img-url;
 }
 
-@mixin box-shadow($amount) {
+@mixin box-shadow-standard($amount) {
   box-shadow: 0 1.5rem 4rem rgba($color-black, $amount);
+}
+
+@mixin center-align-overlay {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
