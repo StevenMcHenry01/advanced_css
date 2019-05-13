@@ -9,7 +9,7 @@
 @import "components/story";
 @import "components/bg-video";
 @import "components/form";
-@import "components/footer";
+@import "components/popup";
 
 @import "base/base";
 @import "base/animations";
@@ -18,5 +18,7 @@
 
 @import "layout/header";
 @import "layout/grid";
+@import "layout/footer";
+@import "layout/navigation";
 
 @import "pages/home";
