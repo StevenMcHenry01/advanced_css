@@ -1,3 +1,16 @@
+/*
+0-600px:        phone
+600-900px:      tablet portrait
+900-1200px:     tablet landscape
+[1200-1800]:    normal styles
+1800px+:        big desktop
+
+// BREAKPOINT ARGUMENT CHOICES
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -411,8 +424,16 @@
   box-sizing: inherit; }
 
 html {
-  /* creates a base 10px font-size and allows for user font sizes to work */
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   padding: 3rem;
@@ -443,7 +464,7 @@ body {
     transform: translate(0); } }
 
 body {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
@@ -552,11 +573,11 @@ body {
   .row .col-1-of-4 {
     width: calc((100% - (3 * 6rem)) / 4); }
   .row .col-2-of-3 {
-    width: calc( 2 * (100% - (2 * 6rem)) / 3 + 6rem); }
+    width: calc( 2 * (100% - (2 * 6rem)) / 3 + 6rem); }
   .row .col-2-of-4 {
-    width: calc( 2 * (100% - (3 * 6rem)) / 4 + 6rem); }
+    width: calc( 2 * (100% - (3 * 6rem)) / 4 + 6rem); }
   .row .col-3-of-4 {
-    width: calc( 3 * (100% - (3 * 6rem)) / 4 + (2 * 6rem)); }
+    width: calc( 3 * (100% - (3 * 6rem)) / 4 + (2 * 6rem)); }
 
 .footer {
   background-color: #333;
