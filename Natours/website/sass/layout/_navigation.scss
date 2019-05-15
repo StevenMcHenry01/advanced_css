@@ -5,8 +5,8 @@
 
   &__button {
     background-color: $color-white;
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
     position: fixed;
     top: 6rem;
     right: 6rem;
@@ -16,6 +16,10 @@
     text-align: center;
     cursor: pointer;
     backface-visibility: hidden;
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -23,8 +27,8 @@
     width: 6rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
+    top: 6rem;
+    right: 6rem;
     background-image: radial-gradient(
       $color-primary-light,
       $color-primary-dark
@@ -32,6 +36,11 @@
     z-index: 1000;
 
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__nav {
@@ -98,7 +107,7 @@
   // Icon
   &__icon {
     position: relative;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     backface-visibility: hidden;
     &,
     &::before,
